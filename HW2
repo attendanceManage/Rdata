@@ -1,0 +1,77 @@
+
+Shireen Imran <shireen2@tlu.ee>
+21:19 (5 minutes ago)
+to me
+
+##############################
+##  Homework assignment #2  ##
+##############################
+
+# Your full name: Shireen Imran
+# Date: 05/10/2022
+
+###########################################################
+##   Please comment your answers, explaining your code.  ##
+###########################################################
+
+####### TASK 1: 0.5 points ################################
+
+# 1.Create a sequence of 14 consecutive integers from 1 to 70, with steps of 5 (i.e., 1, 6, 11, …)
+
+intseqshireen <- seq(from=1,to=70,by=5)    #seq created from 1 to 70 by 5
+
+# and create a matrix with 7 rows and 2 columns using this sequence. Fill the matrix by row.
+
+matshireen <- matrix(intseqshireen, nrow = 7, ncol = 2,  byrow = TRUE)  #creating matrix and inputing data from seq, dim as proposed
+
+# 2. Calculate the mean for all rows and the mean for all columns
+
+meancshireen <- colMeans(matshireen)          #using colmeans to calculate mean for all rows and mean for all cols
+meanrshireen <- rowMeans(matshireen)
+
+
+# 3. Create a new matrix where together with numbers from the previous matrix, 'means' are displayed
+# (under each column and after each row)
+
+matB <- cbind(matshireen, meanrshireen)      #mean displayed under each row and after each col
+matB                          
+matA <- rbind(matshireen, meanrshireen)
+matA
+
+
+
+
+####### TASK 2: 0.5 points ################################
+# 1. Create a matrix A with numbers 12, -14, 4.5, 7.5 in two columns and
+# a matrix B with numbers -5, 14, 3.5, -8 in two columns.
+
+matrixAShireen  <- c(12, -14, 4.5, 7.5)     #storing in vector
+matrixBShireen  <- c(-5, 14, 3.5, 8)
+
+MatrixAShireen <- matrix(matrixAShireen, 2, 2)         #creating matrix
+MatrixBShireen <- matrix(matrixBShireen, 2, 2)
+
+MatrixAShireen
+MatrixBShireen
+
+# 2. Find the sum of A and B matrices and store the results with comments on how the operation is conducted
+
+Supermatrix <- MatrixAShireen + MatrixBShireen         #We can see that in addition to operation, the elements with the same index are added to each other.
+#After addition, the dimension is also the same as it was, i.e., 3 rows and 3 columns
+Supermatrix
+
+# 3. Find the subtraction of A and B matrices and store the results with comments on how the operation is conducted
+
+Weakmatrix <- MatrixAShireen - MatrixBShireen                 #same case explanaiton for subtraction
+Weakmatrix  
+
+
+
+# 4. Find the division of A to B matrices and store the results with comments on how the operation is conducted
+
+Divmatrix <- MatrixAShireen/MatrixBShireen                     #same case explanaiton for div happening accoridng to index
+Divmatrix
+
+
+
+################# END OF THE HOME ASSIGNMENT ################
